@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d12dea75e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="..\portfolio\img\logoo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="close" onclick="closemenu()"></i>
+              </ul>
+              
+            <i class="fa-solid fa-bars" id="close" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>BIS Student</p>
+            <h1 id="adjus">Hi , I'm <span>Nourchene</span><br> From Tunisia</h1>
+        </div>
+
+    </div>
+</div>
+<!--------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="..\portfolio\img\abtme.png" alt="profile pic">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I am a dedicated Business Information Systems student with a strong passion for integrating technology to enhance business operations. 
+                    My academic journey has equipped me with a solid foundation in systems analysis, database management, and information security. 
+                    I have practical experience in developing web applications using Spring Boot and managing databases with MySQL. My goal is to leverage my
+                     technical expertise to drive innovation and efficiency in the business
+                      world.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div> 
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Technical skills</span><br>HTML , CSS , JS , PHP ,SQL , PL/SQL ,( .NET), C# ,JAVA, Spring boot , Angular ,Node Js, Express Js React Js ,MONGODB , MySQL.</li>
+                            <li><span>Languages</span><br>English, Frensh , Arabic , korean. </li>
+                            <li><span>Qualities</span><br>creativity, adaptability, strong team spirit, results-driven</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2024 </span><br>Internship at MG- (Magasin général)</li>
+                            <li><span>July 2024 </span><br>Internship at BNA Bank</li>
+                            <li><span>July 2023 </span><br>Observation training at STEG</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>License in Business computing From ESEN</li>
+                            <li><span>2022</span><br>Baccalauréat Economie / Gestion</li>
+                        </ul>
+                     </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web developpment</h2>
+                <p>I provide professional web development services designed to help businesses establish a strong online presence. With expertise in creating responsive, user-friendly, and visually appealing websites, I ensure seamless functionality across all devices. My skill set includes front-end and back-end development, utilizing modern technologies and frameworks to build websites that are fast, secure, and scalable. Whether it's developing a custom website from scratch or optimizing an existing platform, I prioritize delivering solutions that align with client goals and drive results. By combining technical proficiency with creativity and a commitment to excellence, I strive to bring each project to life with precision and innovation.</p>
+                <!----<a href="#">Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Desktop application development</h2>
+                <p>I provide top-notch desktop application development services, creating powerful, efficient, and user-friendly solutions tailored to your specific needs. With expertise in technologies such as .NET, Java, C++, and Python, I develop applications that run seamlessly across Windows, macOS, and Linux platforms. From designing intuitive user interfaces to implementing robust backend functionality, my focus is on delivering scalable and secure desktop applications that enhance productivity and solve real-world challenges. Whether you need a custom business application, automation tools, or standalone software, I am committed to delivering high-performance solutions that meet your requirements and exceed expectations.</p>
+               <!-------- <a href="#">Learn more</a>--->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Mobile app development</h2>
+                <p>I offer comprehensive mobile app development services to create innovative, high-performing, and user-centric applications for iOS and Android platforms. Utilizing cutting-edge technologies such as Swift, Kotlin, Flutter, and React Native, I design and build apps that are visually engaging, responsive, and optimized for performance. From concept to deployment, I ensure seamless integration of features like user authentication, APIs, and real-time updates to meet your unique business needs. Whether it’s a native app, a cross-platform solution, or an app enhancement, my goal is to deliver mobile applications that provide exceptional user experiences and drive tangible results for your business.</p>
+               <!------- <a href="#">learn morz</a>------>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="..\portfolio\img\work1.webp">
+                <div class="layer">
+                    <h3>GO TITANS</h3>
+                    <p>Gym website</p>
+                    <a href="https://github.com/Nourchene-Garbouj/pfa-project---GO-TITANS.git"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="..\portfolio\img\work2.webp">
+                <div class="layer">
+                    <h3>GO TITANS</h3>
+                    <p>Desktop App</p>
+                    <a href="https://github.com/Nourchene-Garbouj/pfa-project---GO-TITANS.git"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="..\portfolio\img\work3.webp">
+                <div class="layer">
+                    <h3>ALIGNIFY</h3>
+                    <p>Mobile App-(under developping in collaboration)</p>
+                    <a href="https://github.com/yassinebenyedder/ALIGNIFY.git"><i class="fa-solid fa-up-right-from-square"></i> </a>
+                </div>
+
+            </div>
+        </div>
+       <!----- <a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+<!-----------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nourchenegarbouj8@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>50433168</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nourchene.garbouj.1?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/moonlightaah_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nourchene-garbouj-3382b325a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFQUbZjkGQhOl0Q9%2BoyBvCA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="..\portfolio\img\ver fin cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text"name="Name" placeholder="Your Name" required>
+                <input type="email" name="E-mail" placeholder="Your e-mail" required>
+                <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>©copyright Nourchene . Made with <i class="fa-solid fa-heart"></i></p>
+
+</div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby4zYWHk6Rx7GRtDhffixut147qAJ0eUjMjsCnQQnlGs2nTa5cu3sfWGJTa1ffZOE4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successsfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
